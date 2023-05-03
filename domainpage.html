@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="style" href="Style.css">
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: black;
+            color: white;
+        }
+
+            /* Increase the font size of the heading */
+            .header h1 {
+                font-size: 40px;
+            }
+
+        /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+        .navbar {
+            overflow: hidden;
+            background-color: black;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+        }
+
+            /* Style the navigation bar links */
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+
+                /* Right-aligned link */
+                .navbar a.right {
+                    float: right;
+                }
+
+                /* Change color on hover */
+                .navbar a:hover {
+                    background-color: white;
+                    color: black;
+                }
+
+                /* Active/current link */
+                .navbar a.active {
+                    background-color: black;
+                    color: white;
+                }
+
+        /* Column container */
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            -ms-flex: 30%; /* IE10 */
+            flex: 30%;
+            background-color: #555555;
+            padding: 20px;
+        }
+
+        /* Main column */
+        .main {
+            -ms-flex: 100%; /* IE10 */
+            flex: 100%;
+            background-color: #333;
+            padding: 175px;
+        }
+
+        /* Fake image, just for this example */
+        .fakeimg {
+            background-color: #white;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: grey;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>SchemeUp</h1>
+        <h2>Don't just dream it Scheme it!</h2>
+    </div>
+
+
+
+    <div class="navbar">
+        <a href="#" class="active">
+            <h2>Domain</h2>
+            <label for="Domain">:</label>
+            <select name="Domain" id="Domain">
+                <option value="Agriculture">Agriculture</option>
+                <option value="Technology">Technology</option>
+                <option value="Finance">Finance</option>
+                <option value="Automobile">Automobile</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Education">Education</option>
+                <option value="Beauty and skincare">Beauty and skincare</option>
+            </select>
+        </a>
+        <a href="#"><h2>Schemes</h2></a>
+        <a href="https://www.businessinsider.in/business/startups"><h2>News Articles</h2></a>
+        <a href="C:/Users/ritik/Desktop/Projects/new%20scheme/index.html" class="right"><h2>Home</h2></a>
+    </div>
+
+   
+        <div class="main">
+
+            <h1 style="color: white;">
+
+                AGRICULTURAL HIGHER EDUCATION PROJECT (NAHEP)
+
+            </h1>
+            <h2 style="color: white;">
+                Benificiares- Agricultural university students
+            </h2>
+
+            <h4 style="color: white;">Funded by world bank and Indian Governmet</h4>
+            <h4 style="color: white;">
+                The objective of the NAHEP for India is to support participating agricultural universities and ICAR in providing more relevant and higher quality education to Agricultural University students.
+                In addition, a four-year degree in Agriculture, Horticulture, Fisheries and Forestry has been declared a
+                professional degree.
+                The objective of the NAHEP for India is to support participating agricultural universities and ICAR in providing more relevant and higher quality education to Agricultural University students1.
+                The project aims to develop resources and mechanisms for supporting infrastructure, faculty and student advancement, and providing means for better governance and management of agricultural universities23.
+                The project has three components:
+                Component 1 - Support to Agricultural Universities;
+                Component 2 - Investment in ICAR for Leadership in Agricultural Higher Education;
+                Component 3 - Project Management and Learning23.
+                The project would benefit all the Agricultural Universities (AUs), i.e. 63 State Agricultural Universities modelled on the US Land Grant University pattern, 5 Deemed to be Universities (DUs), three Central Agricultural University (CAUs) and four Central Universities (CUs) with Agriculture Faculty23.
+                The project also supports various initiatives such as Career Development Centres, Policy Papers, Training Manuals, Agripreneurship, etc. for enhancing the employability and entrepreneurship skills of the students23.
+            </h4>
+            <br>
+            <h1 style="color: white;">
+                PRADHAN MANTRI ANNANDATA FARMERS AAY SANRAKSAHN ABHIYAN (PM-AASHA)
+                <h2 style="color: white;> Benificiares-Farmers </h2>
+
+                <h2 style="color: white;">
+                    Aimed at ensuring remunerative prices to the farmers for their produce.
+                    The umbrella scheme ‘PM-AASHA’ comprises three sub-schemes:
+                </h2>
+                <h4 style="color: white;">
+                    Price Support Scheme (PSS): The physical procurement of Pulses, Oilseeds and Copra will be done by Central Nodal Agencies (NAFED and FCI) with the proactive role of the state  governments.
+                    Price Deficiency Payment Scheme (PDPS): it is proposed to cover all oilseeds for which Minimum support price (MSP) is notified.
+                    Stockist Scheme (PPPS): For oilseeds, the states will have the option to roll Procurement Stockist Scheme (PPSS) on pilot basis and Committee’s (APMC) Involving the participation of private stockiest. Selected private agency shall procure  the commodity at MSP in the notified  markets from the registered farmers, government to enter the market.
+                    The maximum service charges up to 15% of the notified MSP will be payable.
+                    The scheme was announced in September 2018 as an effort to ensure that farmers growing pulses, oilseeds etc actually got the minimum support prices they are promised for their crops each year2.
+                    The scheme comprises the erstwhile Price Support Scheme (PSS) with certain modifications and rolling out of new schemes of Price Deficiency Payment Scheme (PDPS) and pilot of Private Procurement and Stockist Scheme (PPSS)13.
+                    Under PM-AASHA, States/UTs are offered to choose either PSS and PDPS in a given procurement season with respect to particular oilseeds crop for the entire State3.
+                    The scheme also provides for a mechanism of additional procurement by private agencies under PPSS on pilot basis in selected districts of selected States3.
+                </h4>
+
+
+                <h1 style="color: white;">
+
+                    OPERATION GREENS
+
+                </h1>
+                <h2 style="color: white;">
+                    Benificiares- Consumers and producers
+                </h2>
+
+                <h2 style="color: white;">
+                    NAFED will be the Nodal Agency to implement price stabilisation measures.
+                </h2>
+                <h4 style="color: white;">
+                    The Strategy will comprise of a series of reduce price volatility in Consumers measures as decided by the Ministry Tomatoes, Onions and which includes: Potatoes (TOP) 1.Short term Price Stabilisation Measures commodities 2.Long Term Integrated value chain
+                    development projects: It is essentially a price fixation scheme that aims to ensure farmers are given the right price for their produce. The main objective of the project is to reduce price volatility in agriculture commodities such as· vegetables.
+                    Initially, Government has decided to start focusing on three basic vegetables namely tomatoes, onions  and· potatoes.It includes creation of infrastructure for primary processing and storage near the farm in the form of Primary Processing
+                    Centres (PPCs) and Collection Centres(CCs) and common facilities and enabling infrastructure at Central Processing Centre (CPC).
+
+                </h4>
+        </div>
+    </div>
+
+   
+        
+
+
+</body>
+</html>
